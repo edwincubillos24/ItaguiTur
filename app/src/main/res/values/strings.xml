@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ItaguiTur</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="repassword">Repetir password</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="cancelar">Cancelar</string>
+</resources>
