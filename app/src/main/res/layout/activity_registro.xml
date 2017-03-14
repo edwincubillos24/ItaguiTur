@@ -28,11 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
+        android:inputType="textPassword"
         android:id="@+id/eRegPassword"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/repassword"
+        android:inputType="textPassword"
         android:id="@+id/eRegRepPassword"/>
     <EditText
         android:layout_width="match_parent"
