@@ -10,12 +10,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".PerfilActivity" />
         <activity android:name=".RegistroActivity" />
-        <activity android:name=".FragmentexActivity">
-
-        </activity>
+        <activity android:name=".FragmentexActivity" />
         <activity
             android:name=".ParquesActivity"
             android:label="@string/title_activity_parques"
@@ -25,6 +23,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ListaActivity">
+        </activity>
+        <activity
+            android:name=".DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
     </application>
 
