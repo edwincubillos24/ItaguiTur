@@ -1,6 +1,7 @@
 package com.edwinacubillos.itaguitur;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ public class RegistroActivity extends AppCompatActivity {
     Button bRegistrarse, bCancelar;
     String username, password, repPassword, correo;
     Intent intent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

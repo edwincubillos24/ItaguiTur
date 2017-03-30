@@ -1,8 +1,10 @@
 package com.edwinacubillos.itaguitur;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -10,12 +12,16 @@ public class MainActivity extends AppCompatActivity {
 
     Intent intent;
     String username, correo;
-
+    SharedPreferences prefs;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        prefs = getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        editor = prefs.edit();
 
         Bundle extras = getIntent().getExtras(); //Objeto para extraer la información enviada por el intent desde LoginActivity
         username = extras.getString("username");
@@ -34,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id){
             case R.id.mCerrar:
+                editor.putInt("login",-1);
+                editor.commit();
+
                 intent = new Intent (MainActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
